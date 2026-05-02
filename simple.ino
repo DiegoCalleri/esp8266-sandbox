@@ -38,11 +38,10 @@ server.handleClient();
 
 void handleRoot() {
 String html = "<!DOCTYPE html><html><body>";
-html += "<meta charset=\"UTF-8\">"
+html += "<meta charset=\"UTF-8\">";
 html += "<h1>Управление светодиодом ESP8266</h1>";
-html += "<h1>Управление светодиодом ESP8266</h1>";
-html += "<p><a href=\"/on\"><button>Включить</button></a></p>";
-html += "<p><a href=\"/off\"><button>Выключить</button></a></p>";
+html += "<p><a href=\"/on\"><button>Выключить</button></a></p>";
+html += "<p><a href=\"/off\"><button>Включить</button></a></p>";
 html += "</body></html>";
 server.send(200, "text/html; charset=utf-8", html);
 }
